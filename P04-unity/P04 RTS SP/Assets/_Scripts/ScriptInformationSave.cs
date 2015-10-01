@@ -1,6 +1,17 @@
 ﻿using UnityEngine;
 using System.IO;
 
+/// <summary>
+/// @Author: Andrew Seba
+/// @Description: takes the player and level name and writes it to a file under
+/// Assets/save_data/"levelName"/gameinformation.txt
+/// 
+/// Data Structure
+/// --------------
+/// userName
+/// levelName
+/// --------------
+/// </summary>
 public class ScriptInformationSave : MonoBehaviour {
 
     string userName = null;
