@@ -24,52 +24,51 @@ public class ScriptPhases : MonoBehaviour {
 	public Text textNextPhase;
 
 	Phases phase;
-	bool nextPhase = true; //controls when the engine will go to the next phase.
 	int turnNumber = 0;
-    int curPhaseIndex = 0;
+	int curPhaseIndex = 0;
 
-    //This will restart the curPhaseIndex to 0 when you reach this num.
-    const int ROTATE = 6;
+	//This will restart the curPhaseIndex to 0 when you reach this num.
+	const int ROTATE = 6;
 
 
-    void Start()
-    {
-        curPhaseIndex = (int)Convert.ChangeType(phase, phase.GetTypeCode());
-        textCurPhase.text = "Current Phase: " + phase.ToString();
-        textNextPhase.text = "Next Phase: " + ((Phases)curPhaseIndex + 1).ToString();
-    }
-
-    /// <summary>
-    /// @Author: Andrew Seba
-    /// Increments the phase to next ENUM;
-    /// </summary>
-    public void NextPhase()
+	void Start()
 	{
-        curPhaseIndex = (curPhaseIndex + 1) % ROTATE;
-        phase = (Phases)curPhaseIndex;
-        
+		curPhaseIndex = (int)Convert.ChangeType(phase, phase.GetTypeCode());
+		textCurPhase.text = "Current Phase: " + phase.ToString();
+		textNextPhase.text = "Next Phase: " + ((Phases)curPhaseIndex + 1).ToString();
+	}
+
+	/// <summary>
+	/// @Author: Andrew Seba
+	/// Increments the phase to next ENUM;
+	/// </summary>
+	public void NextPhase()
+	{
+		curPhaseIndex = (curPhaseIndex + 1) % ROTATE;
+		phase = (Phases)curPhaseIndex;
+		
 
 
-        switch (phase)
-        {
-            case (Phases.GAMESTART):
-                break;
-            case (Phases.ROLL):
-                break;
-            case (Phases.TRADE):
-                break;
-            case (Phases.BUILD):
-                break;
-            case (Phases.PROCESS):
-                break;
-            case (Phases.ENDGAME):
-                turnNumber++;
-                break;
-        }
+		switch (phase)
+		{
+			case (Phases.GAMESTART):
+				break;
+			case (Phases.ROLL):
+				break;
+			case (Phases.TRADE):
+				break;
+			case (Phases.BUILD):
+				break;
+			case (Phases.PROCESS):
+				break;
+			case (Phases.ENDGAME):
+				turnNumber++;
+				break;
+		}
 
-        textCurPhase.text = "Current Phase: " + phase.ToString();
-        textNextPhase.text = "Next Phase: " + ((Phases)((curPhaseIndex + 1) % ROTATE)).ToString();
-    }
+		textCurPhase.text = "Current Phase: " + phase.ToString();
+		textNextPhase.text = "Next Phase: " + ((Phases)((curPhaseIndex + 1) % ROTATE)).ToString();
+	}
 
 
 
