@@ -13,5 +13,11 @@ namespace P04_Map_Maker {
         public Form1() {
             InitializeComponent();
         }
+
+        private void aboutToolStripMenuItem_Click( object sender, EventArgs e ) {
+            //create about window
+            AboutBox about = new AboutBox();
+            about.Show();
+        }
     }
 }
