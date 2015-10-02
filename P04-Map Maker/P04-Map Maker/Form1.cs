@@ -19,5 +19,9 @@ namespace P04_Map_Maker {
             AboutBox about = new AboutBox();
             about.Show();
         }
+
+        private void radioButton1_CheckedChanged( object sender, EventArgs e ) {
+
+        }
     }
 }
