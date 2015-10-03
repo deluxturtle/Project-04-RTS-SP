@@ -21,7 +21,7 @@ public class GameInformation : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        CheckForGameController();
+        CheckForGameControllerObject();
     }
 
 	/// <summary>
@@ -40,7 +40,7 @@ public class GameInformation : MonoBehaviour {
     /// Please add a game controller to load scene later and feed it the username and
     /// level name when loading.
     /// </summary>
-    void CheckForGameController()
+    void CheckForGameControllerObject()
     {
         try
         {
@@ -56,8 +56,8 @@ public class GameInformation : MonoBehaviour {
 #if UNITY_EDITOR
                 if (saveInfo == null)
                 {
-                    Debug.Log("You can't save if you drop straight into this scene.");
-                    Debug.Log(">Disableing Save Button.");
+                    Debug.Log(">Disableing Save Button." +
+                        "\nYou can't save if you load straight into this scene");
                     GameObject.Find("Button_SaveGame").GetComponent<Button>().interactable = false;
                 }
 #endif

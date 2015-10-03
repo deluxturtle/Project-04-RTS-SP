@@ -5,7 +5,7 @@ using System;
 
 public enum Phases
 {
-	GAMESTART,
+	GAMESTART,//One time go.
 	ROLL,
 	TRADE,//Extra Credit.
 	BUILD,
@@ -90,6 +90,10 @@ public class CatanPhases : MonoBehaviour {
 		UpdateText();
 	}
 
+    /// <summary>
+    /// Uses the string parameter to Set phase directly.
+    /// </summary>
+    /// <param name="pPhase"></param>
 	public void SetPhase(string pPhase)
 	{
 		pPhase = pPhase.ToUpper();
