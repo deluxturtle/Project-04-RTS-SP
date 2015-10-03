@@ -28,4 +28,15 @@ namespace P04_Map_Maker {
 
         }
     }
+
+    public enum NodeType {
+        
+    }
+
+    public struct Node {
+        public string Name { get; set; }
+        public NodeType Type { get; set; }
+        public int Activation { get; set; }
+        public int Count { get; set; }
+    }
 }
