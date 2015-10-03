@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ScriptPlayerData : MonoBehaviour {
+public class PlayerData : MonoBehaviour {
 
     public string playerName;
     public Phases curPhase;
