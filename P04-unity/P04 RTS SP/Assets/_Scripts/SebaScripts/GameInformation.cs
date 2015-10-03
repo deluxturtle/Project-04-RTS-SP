@@ -68,7 +68,14 @@ public class GameInformation : MonoBehaviour {
                     " disabled." +
                     "\nThis Script will handle disabling it at runtime.");
             }
-            panelOptions.gameObject.SetActive(false);
+            
+        }
+        finally
+        {
+            if(panelOptions != null)
+            {
+                panelOptions.gameObject.SetActive(false);
+            }
         }
     }
 }
