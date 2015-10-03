@@ -20,8 +20,8 @@ public enum Phases
 /// </summary>
 public class ScriptPhases : MonoBehaviour {
 
-	public Text textCurPhase;
-	public Text textNextPhase;
+	Text textCurPhase;
+	Text textNextPhase;
 
 	Phases phase;
 	int turnNumber = 0;
@@ -31,11 +31,26 @@ public class ScriptPhases : MonoBehaviour {
 	const int ROTATE = 6;
 
 
+    //Stops the UpdateText from throwing errors if theres no text gui in the scene.
+    [HideInInspector]
+    public bool textEnabled = true;
+
 	void Start()
-	{
-		curPhaseIndex = (int)Convert.ChangeType(phase, phase.GetTypeCode());
-		textCurPhase.text = "Current Phase: " + phase.ToString();
-		textNextPhase.text = "Next Phase: " + ((Phases)curPhaseIndex + 1).ToString();
+    {
+        try
+        {
+            textCurPhase = GameObject.Find("Text_CurPhase").GetComponent<Text>();
+            textNextPhase = GameObject.Find("Text_NextPhase").GetComponent<Text>();
+        }
+        catch
+        {
+            textEnabled = false;
+            Debug.Log("No text objects found. Probably not in the game scene.");
+        }
+
+        curPhaseIndex = (int)Convert.ChangeType(phase, phase.GetTypeCode());
+
+        UpdateText();
 	}
 
 	/// <summary>
@@ -44,32 +59,86 @@ public class ScriptPhases : MonoBehaviour {
 	/// </summary>
 	public void NextPhase()
 	{
-		curPhaseIndex = (curPhaseIndex + 1) % ROTATE;
-		phase = (Phases)curPhaseIndex;
-		
+
+        curPhaseIndex = (curPhaseIndex + 1) % ROTATE;
+        phase = (Phases)curPhaseIndex;
+
+        switch (phase)
+        {
+            case (Phases.GAMESTART):
+                if(turnNumber > 0)
+                {
+                    //skip phase
+                    phase = Phases.ROLL;
+                    curPhaseIndex = (int)phase.GetTypeCode();
+                    break;
+                }
 
 
-		switch (phase)
-		{
-			case (Phases.GAMESTART):
-				break;
-			case (Phases.ROLL):
-				break;
-			case (Phases.TRADE):
-				break;
-			case (Phases.BUILD):
-				break;
-			case (Phases.PROCESS):
-				break;
-			case (Phases.ENDGAME):
-				turnNumber++;
-				break;
-		}
+                break;
+            case (Phases.ROLL):
+                break;
+            case (Phases.TRADE):
+                break;
+            case (Phases.BUILD):
+                break;
+            case (Phases.PROCESS):
+                break;
+            case (Phases.ENDGAME):
+                turnNumber++;
+                break;
+        }
 
-		textCurPhase.text = "Current Phase: " + phase.ToString();
-		textNextPhase.text = "Next Phase: " + ((Phases)((curPhaseIndex + 1) % ROTATE)).ToString();
+        UpdateText();
 	}
 
+    public void SetPhase(string pPhase)
+    {
+        pPhase = pPhase.ToUpper();
+        switch (pPhase)
+        {
+            case ("GAMESTART"):
+                phase = Phases.GAMESTART;
+                break;
+            case ("ROLL"):
+                phase = Phases.ROLL;
+                break;
+            case ("TRADE"):
+                phase = Phases.TRADE;
+                break;
+            case ("BUILD"):
+                phase = Phases.BUILD;
+                break;
+            case ("PROCESS"):
+                phase = Phases.PROCESS;
+                break;
+            case ("ENDGAME"):
+                phase = Phases.ENDGAME;
+                break;
+        }
+        curPhaseIndex = (int)phase.GetTypeCode();
+    }
 
+
+    //Updates text strings.
+    public void UpdateText()
+    {
+        if (textEnabled)
+        {
+            try
+            {
+                textCurPhase = GameObject.Find("Text_CurPhase").GetComponent<Text>();
+                textNextPhase = GameObject.Find("Text_NextPhase").GetComponent<Text>();
+            }
+            catch
+            {
+                textEnabled = false;
+                Debug.Log("No text objects found. Probably not in the game scene.");
+            }
+            textCurPhase.text = "Current Phase: " + phase.ToString();
+            textNextPhase.text = "Next Phase: " + ((Phases)((curPhaseIndex + 1) % ROTATE)).ToString();
+
+        }
+    }
 
 }

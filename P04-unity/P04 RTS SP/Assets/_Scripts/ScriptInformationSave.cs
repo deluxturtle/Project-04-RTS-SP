@@ -10,12 +10,13 @@ using System.IO;
 /// --------------
 /// userName
 /// levelName
-/// --------------
 /// </summary>
 public class ScriptInformationSave : MonoBehaviour {
 
     string userName = null;
     string levelName = null;
+    string txtInfoLocation;
+    string outputFile = "/gameinformation.txt";
 
     public string UserName
     {
@@ -33,14 +34,18 @@ public class ScriptInformationSave : MonoBehaviour {
         }
     }
 
+    void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     /// <summary>
     /// Takes the level name and makes a new folder.
     /// Creates a gameinformation.txt file and writes the user name and level name.
     /// </summary>
-	public void _SaveInformation()
+	public void _InitFile()
 	{
-		string txtInfoLocation = Application.dataPath + "/save_data/" + levelName;
+		txtInfoLocation = Application.dataPath + "/save_data/" + levelName;
         StreamWriter writer = null;
 
 
@@ -58,12 +63,13 @@ public class ScriptInformationSave : MonoBehaviour {
             //gameinformation.txt
             //UserName
             //LevelName
-            using (writer = new StreamWriter(txtInfoLocation + "/gameinformation.txt"))
+            using (writer = new StreamWriter(txtInfoLocation + outputFile))
             {
                 writer.WriteLine(userName);
                 writer.WriteLine(levelName);
+                
             }
-
+            writer.Close();
         }
         else
         {
@@ -72,4 +78,16 @@ public class ScriptInformationSave : MonoBehaviour {
         }
 
 	}
+
+    public void SaveGame()
+    {
+        StreamWriter writer = null;
+        using (writer = new StreamWriter(txtInfoLocation + outputFile))
+        {
+            writer.WriteLine(userName);
+            writer.WriteLine(levelName);
+
+        }
+        writer.Close();
+    }
 }
