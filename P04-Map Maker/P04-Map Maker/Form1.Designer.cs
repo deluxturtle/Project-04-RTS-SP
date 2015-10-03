@@ -85,19 +85,19 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(174, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
             this.newToolStripMenuItem.Text = "New";
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(174, 38);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
             this.loadToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(174, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // helpToolStripMenuItem
@@ -125,7 +125,6 @@
             this.tile1.TabIndex = 1;
             this.tile1.TabStop = true;
             this.tile1.UseVisualStyleBackColor = true;
-            this.tile1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // tile2
             // 

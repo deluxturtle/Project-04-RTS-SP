@@ -59,15 +59,5 @@ namespace P04_Map_Maker.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _13274408411657758938Howling_Wolf_Head_Silhouette_svg_med {
-            get {
-                object obj = ResourceManager.GetObject("13274408411657758938Howling Wolf Head Silhouette.svg.med", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
