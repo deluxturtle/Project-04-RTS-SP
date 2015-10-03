@@ -16,4 +16,9 @@ public class ChangeScenes : MonoBehaviour {
     {
         Application.LoadLevel("CreateGameScene");
     }
+
+    public void _QuitGame()
+    {
+        Application.Quit();
+    }
 }

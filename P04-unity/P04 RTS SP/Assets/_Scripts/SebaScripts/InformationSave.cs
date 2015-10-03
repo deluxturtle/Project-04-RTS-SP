@@ -90,12 +90,26 @@ public class InformationSave : MonoBehaviour {
 
 	public void SaveGame()
 	{
+		PlayerData playerData = GameObject.Find("GameInformation").GetComponent<PlayerData>();
+
 		StreamWriter writer = null;
 		using (writer = new StreamWriter(txtInfoLocation + outputFile))
 		{
 			writer.WriteLine(userName);
 			writer.WriteLine(levelName);
 
+			writer.WriteLine(playerData.curPhase);
+
+			writer.WriteLine(playerData.wood);
+			writer.WriteLine(playerData.wool);
+			writer.WriteLine(playerData.brick);
+			writer.WriteLine(playerData.grain);
+
+			//write actions
+			foreach(string action in playerData.playerActions)
+			{
+				writer.WriteLine(action);
+			}
 		}
 		writer.Close();
 	}
