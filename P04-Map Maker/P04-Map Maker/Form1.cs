@@ -58,6 +58,13 @@ namespace P04_Map_Maker {
             //MessageBox.Show(message);
         }
 
+        private void button1_Click( object sender, EventArgs e ) {
+            label5.Text = RadioButtonSwitch.Active.ToString();
+        }
+
+        private void Form1_Load( object sender, EventArgs e ) {
+
+        }
     }
 
     public enum NodeType {

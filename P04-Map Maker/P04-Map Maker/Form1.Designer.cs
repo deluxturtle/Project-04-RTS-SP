@@ -30,25 +30,6 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tile1 = new System.Windows.Forms.RadioButton();
-            this.tile2 = new System.Windows.Forms.RadioButton();
-            this.tile3 = new System.Windows.Forms.RadioButton();
-            this.tile4 = new System.Windows.Forms.RadioButton();
-            this.tile5 = new System.Windows.Forms.RadioButton();
-            this.tile6 = new System.Windows.Forms.RadioButton();
-            this.tile7 = new System.Windows.Forms.RadioButton();
-            this.tile11 = new System.Windows.Forms.RadioButton();
-            this.tile15 = new System.Windows.Forms.RadioButton();
-            this.tile14 = new System.Windows.Forms.RadioButton();
-            this.tile13 = new System.Windows.Forms.RadioButton();
-            this.tile10 = new System.Windows.Forms.RadioButton();
-            this.tile9 = new System.Windows.Forms.RadioButton();
-            this.tile8 = new System.Windows.Forms.RadioButton();
-            this.tile12 = new System.Windows.Forms.RadioButton();
-            this.tile16 = new System.Windows.Forms.RadioButton();
-            this.tile17 = new System.Windows.Forms.RadioButton();
-            this.tile18 = new System.Windows.Forms.RadioButton();
-            this.tile19 = new System.Windows.Forms.RadioButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,6 +38,25 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButtonSwitch3 = new RadioButtonSwitch();
+            this.radioButtonSwitch2 = new RadioButtonSwitch();
+            this.radioButtonSwitch1 = new RadioButtonSwitch();
+            this.radioButtonSwitch4 = new RadioButtonSwitch();
+            this.radioButtonSwitch5 = new RadioButtonSwitch();
+            this.radioButtonSwitch6 = new RadioButtonSwitch();
+            this.radioButtonSwitch7 = new RadioButtonSwitch();
+            this.radioButtonSwitch8 = new RadioButtonSwitch();
+            this.radioButtonSwitch9 = new RadioButtonSwitch();
+            this.radioButtonSwitch10 = new RadioButtonSwitch();
+            this.radioButtonSwitch11 = new RadioButtonSwitch();
+            this.radioButtonSwitch12 = new RadioButtonSwitch();
+            this.radioButtonSwitch13 = new RadioButtonSwitch();
+            this.radioButtonSwitch14 = new RadioButtonSwitch();
+            this.radioButtonSwitch15 = new RadioButtonSwitch();
+            this.radioButtonSwitch16 = new RadioButtonSwitch();
+            this.radioButtonSwitch17 = new RadioButtonSwitch();
+            this.radioButtonSwitch18 = new RadioButtonSwitch();
+            this.radioButtonSwitch19 = new RadioButtonSwitch();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,19 +85,19 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(174, 38);
             this.newToolStripMenuItem.Text = "New";
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(174, 38);
             this.loadToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(269, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(174, 38);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // helpToolStripMenuItem
@@ -114,216 +114,6 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 38);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // tile1
-            // 
-            this.tile1.AutoSize = true;
-            this.tile1.Location = new System.Drawing.Point(122, 147);
-            this.tile1.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile1.Name = "tile1";
-            this.tile1.Size = new System.Drawing.Size(27, 26);
-            this.tile1.TabIndex = 1;
-            this.tile1.TabStop = true;
-            this.tile1.UseVisualStyleBackColor = true;
-            // 
-            // tile2
-            // 
-            this.tile2.AutoSize = true;
-            this.tile2.Location = new System.Drawing.Point(155, 147);
-            this.tile2.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile2.Name = "tile2";
-            this.tile2.Size = new System.Drawing.Size(27, 26);
-            this.tile2.TabIndex = 2;
-            this.tile2.TabStop = true;
-            this.tile2.UseVisualStyleBackColor = true;
-            // 
-            // tile3
-            // 
-            this.tile3.AutoSize = true;
-            this.tile3.Location = new System.Drawing.Point(188, 147);
-            this.tile3.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile3.Name = "tile3";
-            this.tile3.Size = new System.Drawing.Size(27, 26);
-            this.tile3.TabIndex = 3;
-            this.tile3.TabStop = true;
-            this.tile3.UseVisualStyleBackColor = true;
-            // 
-            // tile4
-            // 
-            this.tile4.AutoSize = true;
-            this.tile4.Location = new System.Drawing.Point(108, 179);
-            this.tile4.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile4.Name = "tile4";
-            this.tile4.Size = new System.Drawing.Size(27, 26);
-            this.tile4.TabIndex = 4;
-            this.tile4.TabStop = true;
-            this.tile4.UseVisualStyleBackColor = true;
-            // 
-            // tile5
-            // 
-            this.tile5.AutoSize = true;
-            this.tile5.Location = new System.Drawing.Point(141, 179);
-            this.tile5.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile5.Name = "tile5";
-            this.tile5.Size = new System.Drawing.Size(27, 26);
-            this.tile5.TabIndex = 5;
-            this.tile5.TabStop = true;
-            this.tile5.UseVisualStyleBackColor = true;
-            // 
-            // tile6
-            // 
-            this.tile6.AutoSize = true;
-            this.tile6.Location = new System.Drawing.Point(174, 179);
-            this.tile6.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile6.Name = "tile6";
-            this.tile6.Size = new System.Drawing.Size(27, 26);
-            this.tile6.TabIndex = 6;
-            this.tile6.TabStop = true;
-            this.tile6.UseVisualStyleBackColor = true;
-            // 
-            // tile7
-            // 
-            this.tile7.AutoSize = true;
-            this.tile7.Location = new System.Drawing.Point(207, 179);
-            this.tile7.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile7.Name = "tile7";
-            this.tile7.Size = new System.Drawing.Size(27, 26);
-            this.tile7.TabIndex = 7;
-            this.tile7.TabStop = true;
-            this.tile7.UseVisualStyleBackColor = true;
-            // 
-            // tile11
-            // 
-            this.tile11.AutoSize = true;
-            this.tile11.Location = new System.Drawing.Point(188, 211);
-            this.tile11.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile11.Name = "tile11";
-            this.tile11.Size = new System.Drawing.Size(27, 26);
-            this.tile11.TabIndex = 14;
-            this.tile11.TabStop = true;
-            this.tile11.UseVisualStyleBackColor = true;
-            // 
-            // tile15
-            // 
-            this.tile15.AutoSize = true;
-            this.tile15.Location = new System.Drawing.Point(174, 243);
-            this.tile15.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile15.Name = "tile15";
-            this.tile15.Size = new System.Drawing.Size(27, 26);
-            this.tile15.TabIndex = 13;
-            this.tile15.TabStop = true;
-            this.tile15.UseVisualStyleBackColor = true;
-            // 
-            // tile14
-            // 
-            this.tile14.AutoSize = true;
-            this.tile14.Location = new System.Drawing.Point(141, 243);
-            this.tile14.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile14.Name = "tile14";
-            this.tile14.Size = new System.Drawing.Size(27, 26);
-            this.tile14.TabIndex = 12;
-            this.tile14.TabStop = true;
-            this.tile14.UseVisualStyleBackColor = true;
-            // 
-            // tile13
-            // 
-            this.tile13.AutoSize = true;
-            this.tile13.Location = new System.Drawing.Point(108, 243);
-            this.tile13.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile13.Name = "tile13";
-            this.tile13.Size = new System.Drawing.Size(27, 26);
-            this.tile13.TabIndex = 11;
-            this.tile13.TabStop = true;
-            this.tile13.UseVisualStyleBackColor = true;
-            // 
-            // tile10
-            // 
-            this.tile10.AutoSize = true;
-            this.tile10.Location = new System.Drawing.Point(155, 211);
-            this.tile10.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile10.Name = "tile10";
-            this.tile10.Size = new System.Drawing.Size(27, 26);
-            this.tile10.TabIndex = 10;
-            this.tile10.TabStop = true;
-            this.tile10.UseVisualStyleBackColor = true;
-            // 
-            // tile9
-            // 
-            this.tile9.AutoSize = true;
-            this.tile9.Location = new System.Drawing.Point(122, 211);
-            this.tile9.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile9.Name = "tile9";
-            this.tile9.Size = new System.Drawing.Size(27, 26);
-            this.tile9.TabIndex = 9;
-            this.tile9.TabStop = true;
-            this.tile9.UseVisualStyleBackColor = true;
-            // 
-            // tile8
-            // 
-            this.tile8.AutoSize = true;
-            this.tile8.Location = new System.Drawing.Point(89, 211);
-            this.tile8.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile8.Name = "tile8";
-            this.tile8.Size = new System.Drawing.Size(27, 26);
-            this.tile8.TabIndex = 8;
-            this.tile8.TabStop = true;
-            this.tile8.UseVisualStyleBackColor = true;
-            // 
-            // tile12
-            // 
-            this.tile12.AutoSize = true;
-            this.tile12.Location = new System.Drawing.Point(221, 211);
-            this.tile12.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile12.Name = "tile12";
-            this.tile12.Size = new System.Drawing.Size(27, 26);
-            this.tile12.TabIndex = 15;
-            this.tile12.TabStop = true;
-            this.tile12.UseVisualStyleBackColor = true;
-            // 
-            // tile16
-            // 
-            this.tile16.AutoSize = true;
-            this.tile16.Location = new System.Drawing.Point(207, 243);
-            this.tile16.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile16.Name = "tile16";
-            this.tile16.Size = new System.Drawing.Size(27, 26);
-            this.tile16.TabIndex = 16;
-            this.tile16.TabStop = true;
-            this.tile16.UseVisualStyleBackColor = true;
-            // 
-            // tile17
-            // 
-            this.tile17.AutoSize = true;
-            this.tile17.Location = new System.Drawing.Point(125, 275);
-            this.tile17.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile17.Name = "tile17";
-            this.tile17.Size = new System.Drawing.Size(27, 26);
-            this.tile17.TabIndex = 17;
-            this.tile17.TabStop = true;
-            this.tile17.UseVisualStyleBackColor = true;
-            // 
-            // tile18
-            // 
-            this.tile18.AutoSize = true;
-            this.tile18.Location = new System.Drawing.Point(158, 275);
-            this.tile18.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile18.Name = "tile18";
-            this.tile18.Size = new System.Drawing.Size(27, 26);
-            this.tile18.TabIndex = 18;
-            this.tile18.TabStop = true;
-            this.tile18.UseVisualStyleBackColor = true;
-            // 
-            // tile19
-            // 
-            this.tile19.AutoSize = true;
-            this.tile19.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tile19.Location = new System.Drawing.Point(191, 275);
-            this.tile19.MinimumSize = new System.Drawing.Size(3, 3);
-            this.tile19.Name = "tile19";
-            this.tile19.Size = new System.Drawing.Size(27, 26);
-            this.tile19.TabIndex = 19;
-            this.tile19.TabStop = true;
-            this.tile19.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -399,16 +189,244 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 82);
+            this.textBox1.Location = new System.Drawing.Point(32, 83);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(258, 31);
             this.textBox1.TabIndex = 28;
+            // 
+            // radioButtonSwitch3
+            // 
+            this.radioButtonSwitch3.AutoSize = true;
+            this.radioButtonSwitch3.ID = 6758;
+            this.radioButtonSwitch3.Location = new System.Drawing.Point(169, 136);
+            this.radioButtonSwitch3.Name = "radioButtonSwitch3";
+            this.radioButtonSwitch3.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch3.TabIndex = 32;
+            this.radioButtonSwitch3.TabStop = true;
+            this.radioButtonSwitch3.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch2
+            // 
+            this.radioButtonSwitch2.AutoSize = true;
+            this.radioButtonSwitch2.ID = 1;
+            this.radioButtonSwitch2.Location = new System.Drawing.Point(136, 136);
+            this.radioButtonSwitch2.Name = "radioButtonSwitch2";
+            this.radioButtonSwitch2.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch2.TabIndex = 31;
+            this.radioButtonSwitch2.TabStop = true;
+            this.radioButtonSwitch2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch1
+            // 
+            this.radioButtonSwitch1.AutoSize = true;
+            this.radioButtonSwitch1.ID = 0;
+            this.radioButtonSwitch1.Location = new System.Drawing.Point(103, 136);
+            this.radioButtonSwitch1.Name = "radioButtonSwitch1";
+            this.radioButtonSwitch1.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch1.TabIndex = 30;
+            this.radioButtonSwitch1.TabStop = true;
+            this.radioButtonSwitch1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch4
+            // 
+            this.radioButtonSwitch4.AutoSize = true;
+            this.radioButtonSwitch4.ID = 6758;
+            this.radioButtonSwitch4.Location = new System.Drawing.Point(157, 166);
+            this.radioButtonSwitch4.Name = "radioButtonSwitch4";
+            this.radioButtonSwitch4.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch4.TabIndex = 37;
+            this.radioButtonSwitch4.TabStop = true;
+            this.radioButtonSwitch4.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch5
+            // 
+            this.radioButtonSwitch5.AutoSize = true;
+            this.radioButtonSwitch5.ID = 1;
+            this.radioButtonSwitch5.Location = new System.Drawing.Point(124, 166);
+            this.radioButtonSwitch5.Name = "radioButtonSwitch5";
+            this.radioButtonSwitch5.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch5.TabIndex = 36;
+            this.radioButtonSwitch5.TabStop = true;
+            this.radioButtonSwitch5.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch6
+            // 
+            this.radioButtonSwitch6.AutoSize = true;
+            this.radioButtonSwitch6.ID = 0;
+            this.radioButtonSwitch6.Location = new System.Drawing.Point(91, 166);
+            this.radioButtonSwitch6.Name = "radioButtonSwitch6";
+            this.radioButtonSwitch6.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch6.TabIndex = 35;
+            this.radioButtonSwitch6.TabStop = true;
+            this.radioButtonSwitch6.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch7
+            // 
+            this.radioButtonSwitch7.AutoSize = true;
+            this.radioButtonSwitch7.ID = 6758;
+            this.radioButtonSwitch7.Location = new System.Drawing.Point(136, 195);
+            this.radioButtonSwitch7.Name = "radioButtonSwitch7";
+            this.radioButtonSwitch7.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch7.TabIndex = 40;
+            this.radioButtonSwitch7.TabStop = true;
+            this.radioButtonSwitch7.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch8
+            // 
+            this.radioButtonSwitch8.AutoSize = true;
+            this.radioButtonSwitch8.ID = 1;
+            this.radioButtonSwitch8.Location = new System.Drawing.Point(103, 195);
+            this.radioButtonSwitch8.Name = "radioButtonSwitch8";
+            this.radioButtonSwitch8.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch8.TabIndex = 39;
+            this.radioButtonSwitch8.TabStop = true;
+            this.radioButtonSwitch8.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch9
+            // 
+            this.radioButtonSwitch9.AutoSize = true;
+            this.radioButtonSwitch9.ID = 0;
+            this.radioButtonSwitch9.Location = new System.Drawing.Point(70, 195);
+            this.radioButtonSwitch9.Name = "radioButtonSwitch9";
+            this.radioButtonSwitch9.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch9.TabIndex = 38;
+            this.radioButtonSwitch9.TabStop = true;
+            this.radioButtonSwitch9.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch10
+            // 
+            this.radioButtonSwitch10.AutoSize = true;
+            this.radioButtonSwitch10.ID = 6758;
+            this.radioButtonSwitch10.Location = new System.Drawing.Point(157, 224);
+            this.radioButtonSwitch10.Name = "radioButtonSwitch10";
+            this.radioButtonSwitch10.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch10.TabIndex = 43;
+            this.radioButtonSwitch10.TabStop = true;
+            this.radioButtonSwitch10.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch11
+            // 
+            this.radioButtonSwitch11.AutoSize = true;
+            this.radioButtonSwitch11.ID = 1;
+            this.radioButtonSwitch11.Location = new System.Drawing.Point(124, 224);
+            this.radioButtonSwitch11.Name = "radioButtonSwitch11";
+            this.radioButtonSwitch11.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch11.TabIndex = 42;
+            this.radioButtonSwitch11.TabStop = true;
+            this.radioButtonSwitch11.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch12
+            // 
+            this.radioButtonSwitch12.AutoSize = true;
+            this.radioButtonSwitch12.ID = 0;
+            this.radioButtonSwitch12.Location = new System.Drawing.Point(91, 224);
+            this.radioButtonSwitch12.Name = "radioButtonSwitch12";
+            this.radioButtonSwitch12.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch12.TabIndex = 41;
+            this.radioButtonSwitch12.TabStop = true;
+            this.radioButtonSwitch12.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch13
+            // 
+            this.radioButtonSwitch13.AutoSize = true;
+            this.radioButtonSwitch13.ID = 6758;
+            this.radioButtonSwitch13.Location = new System.Drawing.Point(173, 254);
+            this.radioButtonSwitch13.Name = "radioButtonSwitch13";
+            this.radioButtonSwitch13.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch13.TabIndex = 46;
+            this.radioButtonSwitch13.TabStop = true;
+            this.radioButtonSwitch13.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch14
+            // 
+            this.radioButtonSwitch14.AutoSize = true;
+            this.radioButtonSwitch14.ID = 1;
+            this.radioButtonSwitch14.Location = new System.Drawing.Point(140, 254);
+            this.radioButtonSwitch14.Name = "radioButtonSwitch14";
+            this.radioButtonSwitch14.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch14.TabIndex = 45;
+            this.radioButtonSwitch14.TabStop = true;
+            this.radioButtonSwitch14.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch15
+            // 
+            this.radioButtonSwitch15.AutoSize = true;
+            this.radioButtonSwitch15.ID = 0;
+            this.radioButtonSwitch15.Location = new System.Drawing.Point(107, 254);
+            this.radioButtonSwitch15.Name = "radioButtonSwitch15";
+            this.radioButtonSwitch15.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch15.TabIndex = 44;
+            this.radioButtonSwitch15.TabStop = true;
+            this.radioButtonSwitch15.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch16
+            // 
+            this.radioButtonSwitch16.AutoSize = true;
+            this.radioButtonSwitch16.ID = 6758;
+            this.radioButtonSwitch16.Location = new System.Drawing.Point(173, 195);
+            this.radioButtonSwitch16.Name = "radioButtonSwitch16";
+            this.radioButtonSwitch16.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch16.TabIndex = 47;
+            this.radioButtonSwitch16.TabStop = true;
+            this.radioButtonSwitch16.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch17
+            // 
+            this.radioButtonSwitch17.AutoSize = true;
+            this.radioButtonSwitch17.ID = 6758;
+            this.radioButtonSwitch17.Location = new System.Drawing.Point(190, 166);
+            this.radioButtonSwitch17.Name = "radioButtonSwitch17";
+            this.radioButtonSwitch17.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch17.TabIndex = 48;
+            this.radioButtonSwitch17.TabStop = true;
+            this.radioButtonSwitch17.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch18
+            // 
+            this.radioButtonSwitch18.AutoSize = true;
+            this.radioButtonSwitch18.ID = 6758;
+            this.radioButtonSwitch18.Location = new System.Drawing.Point(206, 195);
+            this.radioButtonSwitch18.Name = "radioButtonSwitch18";
+            this.radioButtonSwitch18.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch18.TabIndex = 49;
+            this.radioButtonSwitch18.TabStop = true;
+            this.radioButtonSwitch18.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSwitch19
+            // 
+            this.radioButtonSwitch19.AutoSize = true;
+            this.radioButtonSwitch19.ID = 6758;
+            this.radioButtonSwitch19.Location = new System.Drawing.Point(190, 224);
+            this.radioButtonSwitch19.Name = "radioButtonSwitch19";
+            this.radioButtonSwitch19.Size = new System.Drawing.Size(27, 26);
+            this.radioButtonSwitch19.TabIndex = 50;
+            this.radioButtonSwitch19.TabStop = true;
+            this.radioButtonSwitch19.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 331);
+            this.ClientSize = new System.Drawing.Size(522, 311);
+            this.Controls.Add(this.radioButtonSwitch19);
+            this.Controls.Add(this.radioButtonSwitch18);
+            this.Controls.Add(this.radioButtonSwitch17);
+            this.Controls.Add(this.radioButtonSwitch16);
+            this.Controls.Add(this.radioButtonSwitch13);
+            this.Controls.Add(this.radioButtonSwitch14);
+            this.Controls.Add(this.radioButtonSwitch15);
+            this.Controls.Add(this.radioButtonSwitch10);
+            this.Controls.Add(this.radioButtonSwitch11);
+            this.Controls.Add(this.radioButtonSwitch12);
+            this.Controls.Add(this.radioButtonSwitch7);
+            this.Controls.Add(this.radioButtonSwitch8);
+            this.Controls.Add(this.radioButtonSwitch9);
+            this.Controls.Add(this.radioButtonSwitch4);
+            this.Controls.Add(this.radioButtonSwitch5);
+            this.Controls.Add(this.radioButtonSwitch6);
+            this.Controls.Add(this.radioButtonSwitch3);
+            this.Controls.Add(this.radioButtonSwitch2);
+            this.Controls.Add(this.radioButtonSwitch1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox2);
@@ -417,29 +435,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.tile19);
-            this.Controls.Add(this.tile18);
-            this.Controls.Add(this.tile17);
-            this.Controls.Add(this.tile16);
-            this.Controls.Add(this.tile12);
-            this.Controls.Add(this.tile11);
-            this.Controls.Add(this.tile15);
-            this.Controls.Add(this.tile14);
-            this.Controls.Add(this.tile13);
-            this.Controls.Add(this.tile10);
-            this.Controls.Add(this.tile9);
-            this.Controls.Add(this.tile8);
-            this.Controls.Add(this.tile7);
-            this.Controls.Add(this.tile6);
-            this.Controls.Add(this.tile5);
-            this.Controls.Add(this.tile4);
-            this.Controls.Add(this.tile3);
-            this.Controls.Add(this.tile2);
-            this.Controls.Add(this.tile1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Title Of Catan - Map Maker";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -456,25 +456,6 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.RadioButton tile1;
-        private System.Windows.Forms.RadioButton tile2;
-        private System.Windows.Forms.RadioButton tile3;
-        private System.Windows.Forms.RadioButton tile4;
-        private System.Windows.Forms.RadioButton tile5;
-        private System.Windows.Forms.RadioButton tile6;
-        private System.Windows.Forms.RadioButton tile7;
-        private System.Windows.Forms.RadioButton tile11;
-        private System.Windows.Forms.RadioButton tile15;
-        private System.Windows.Forms.RadioButton tile14;
-        private System.Windows.Forms.RadioButton tile13;
-        private System.Windows.Forms.RadioButton tile10;
-        private System.Windows.Forms.RadioButton tile9;
-        private System.Windows.Forms.RadioButton tile8;
-        private System.Windows.Forms.RadioButton tile12;
-        private System.Windows.Forms.RadioButton tile16;
-        private System.Windows.Forms.RadioButton tile17;
-        private System.Windows.Forms.RadioButton tile18;
-        private System.Windows.Forms.RadioButton tile19;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -483,6 +464,25 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
+        private RadioButtonSwitch radioButtonSwitch1;
+        private RadioButtonSwitch radioButtonSwitch2;
+        private RadioButtonSwitch radioButtonSwitch3;
+        private RadioButtonSwitch radioButtonSwitch4;
+        private RadioButtonSwitch radioButtonSwitch5;
+        private RadioButtonSwitch radioButtonSwitch6;
+        private RadioButtonSwitch radioButtonSwitch7;
+        private RadioButtonSwitch radioButtonSwitch8;
+        private RadioButtonSwitch radioButtonSwitch9;
+        private RadioButtonSwitch radioButtonSwitch10;
+        private RadioButtonSwitch radioButtonSwitch11;
+        private RadioButtonSwitch radioButtonSwitch12;
+        private RadioButtonSwitch radioButtonSwitch13;
+        private RadioButtonSwitch radioButtonSwitch14;
+        private RadioButtonSwitch radioButtonSwitch15;
+        private RadioButtonSwitch radioButtonSwitch16;
+        private RadioButtonSwitch radioButtonSwitch17;
+        private RadioButtonSwitch radioButtonSwitch18;
+        private RadioButtonSwitch radioButtonSwitch19;
     }
 }
 
