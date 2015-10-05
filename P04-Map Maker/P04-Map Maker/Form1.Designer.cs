@@ -200,6 +200,7 @@
             this.radioButtonSwitch3.TabIndex = 32;
             this.radioButtonSwitch3.TabStop = true;
             this.radioButtonSwitch3.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch2
             // 
@@ -211,6 +212,7 @@
             this.radioButtonSwitch2.TabIndex = 31;
             this.radioButtonSwitch2.TabStop = true;
             this.radioButtonSwitch2.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch1
             // 
@@ -222,6 +224,7 @@
             this.radioButtonSwitch1.TabIndex = 30;
             this.radioButtonSwitch1.TabStop = true;
             this.radioButtonSwitch1.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler(this.radioButtonSwitch_CheckedChanged);
             // 
             // radioButtonSwitch4
             // 
@@ -233,6 +236,7 @@
             this.radioButtonSwitch4.TabIndex = 37;
             this.radioButtonSwitch4.TabStop = true;
             this.radioButtonSwitch4.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch5
             // 
@@ -244,6 +248,7 @@
             this.radioButtonSwitch5.TabIndex = 36;
             this.radioButtonSwitch5.TabStop = true;
             this.radioButtonSwitch5.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch6
             // 
@@ -255,6 +260,7 @@
             this.radioButtonSwitch6.TabIndex = 35;
             this.radioButtonSwitch6.TabStop = true;
             this.radioButtonSwitch6.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch7
             // 
@@ -266,6 +272,7 @@
             this.radioButtonSwitch7.TabIndex = 40;
             this.radioButtonSwitch7.TabStop = true;
             this.radioButtonSwitch7.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch8
             // 
@@ -277,6 +284,7 @@
             this.radioButtonSwitch8.TabIndex = 39;
             this.radioButtonSwitch8.TabStop = true;
             this.radioButtonSwitch8.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch9
             // 
@@ -288,6 +296,7 @@
             this.radioButtonSwitch9.TabIndex = 38;
             this.radioButtonSwitch9.TabStop = true;
             this.radioButtonSwitch9.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch10
             // 
@@ -299,6 +308,7 @@
             this.radioButtonSwitch10.TabIndex = 43;
             this.radioButtonSwitch10.TabStop = true;
             this.radioButtonSwitch10.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch11
             // 
@@ -310,6 +320,7 @@
             this.radioButtonSwitch11.TabIndex = 42;
             this.radioButtonSwitch11.TabStop = true;
             this.radioButtonSwitch11.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch12
             // 
@@ -321,6 +332,7 @@
             this.radioButtonSwitch12.TabIndex = 41;
             this.radioButtonSwitch12.TabStop = true;
             this.radioButtonSwitch12.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch13
             // 
@@ -332,6 +344,7 @@
             this.radioButtonSwitch13.TabIndex = 46;
             this.radioButtonSwitch13.TabStop = true;
             this.radioButtonSwitch13.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch14
             // 
@@ -343,6 +356,7 @@
             this.radioButtonSwitch14.TabIndex = 45;
             this.radioButtonSwitch14.TabStop = true;
             this.radioButtonSwitch14.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch15
             // 
@@ -354,6 +368,7 @@
             this.radioButtonSwitch15.TabIndex = 44;
             this.radioButtonSwitch15.TabStop = true;
             this.radioButtonSwitch15.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch16
             // 
@@ -365,6 +380,7 @@
             this.radioButtonSwitch16.TabIndex = 47;
             this.radioButtonSwitch16.TabStop = true;
             this.radioButtonSwitch16.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch17
             // 
@@ -376,6 +392,7 @@
             this.radioButtonSwitch17.TabIndex = 48;
             this.radioButtonSwitch17.TabStop = true;
             this.radioButtonSwitch17.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch18
             // 
@@ -387,6 +404,7 @@
             this.radioButtonSwitch18.TabIndex = 49;
             this.radioButtonSwitch18.TabStop = true;
             this.radioButtonSwitch18.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // radioButtonSwitch19
             // 
@@ -398,6 +416,7 @@
             this.radioButtonSwitch19.TabIndex = 50;
             this.radioButtonSwitch19.TabStop = true;
             this.radioButtonSwitch19.UseVisualStyleBackColor = true;
+            this.radioButtonSwitch1.CheckedChanged += new System.EventHandler( this.radioButtonSwitch_CheckedChanged );
             // 
             // countBox
             // 

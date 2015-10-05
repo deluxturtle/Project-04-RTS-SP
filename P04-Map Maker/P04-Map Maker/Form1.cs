@@ -37,6 +37,13 @@ namespace P04_Map_Maker {
         void countBox_ValueChanged(object sender, EventArgs e) {}
 
         void nameBox_TextChanged(object sender, EventArgs e) {}
+
+        void radioButtonSwitch_CheckedChanged( object sender, EventArgs e ) {
+            countBox.Value = nodes[RadioButtonSwitch.Active].Count;
+            nameBox.Text = nodes[RadioButtonSwitch.Active].Name;
+            typeBox.SelectedItem = nodes[RadioButtonSwitch.Active].Type;
+            activationBox.SelectedItem = nodes[RadioButtonSwitch.Active].Activation;
+        }
     }
 
     public enum NodeType {
