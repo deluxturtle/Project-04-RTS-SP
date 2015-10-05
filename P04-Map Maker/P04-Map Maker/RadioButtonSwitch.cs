@@ -15,18 +15,21 @@ class RadioButtonSwitch : RadioButton {
 
     public int ID { get; set; }
 
-
     #endregion
     
     protected override void OnClick(EventArgs e) {
         base.OnClick(e);
-        if ( this.Checked ) {
+
+        if ( this.Checked) {
             Active = this.ID;
         }
+
     }
 
     protected override void OnCheckedChanged(EventArgs e) {
         base.OnCheckedChanged(e);
+
+        Console.WriteLine("Rawr");
         
     }
 
