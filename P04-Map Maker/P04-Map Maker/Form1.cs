@@ -18,6 +18,7 @@ namespace P04_Map_Maker {
 
         public Form1() {
             InitializeComponent();
+            radioButtonSwitch1.Checked = true;
         }
 
         #region menu strip
@@ -32,17 +33,31 @@ namespace P04_Map_Maker {
 
         void typeBox_SelectedIndexChanged(object sender, EventArgs e) {}
 
-        void activationBox_SelectedIndexChanged(object sender, EventArgs e) {}
+        void activationBox_SelectedIndexChanged(object sender, EventArgs e) {
+            
+        }
 
-        void countBox_ValueChanged(object sender, EventArgs e) {}
+        void countBox_ValueChanged(object sender, EventArgs e) {
+            nodes[RadioButtonSwitch.Active].Count = (int)countBox.Value;
+        }
 
-        void nameBox_TextChanged(object sender, EventArgs e) {}
+        void nameBox_TextChanged(object sender, EventArgs e) {
+            nodes[RadioButtonSwitch.Active].Name = nameBox.Text;
+        }
 
-        void radioButtonSwitch_CheckedChanged( object sender, EventArgs e ) {
-            countBox.Value = nodes[RadioButtonSwitch.Active].Count;
-            nameBox.Text = nodes[RadioButtonSwitch.Active].Name;
-            typeBox.SelectedItem = nodes[RadioButtonSwitch.Active].Type;
-            activationBox.SelectedItem = nodes[RadioButtonSwitch.Active].Activation;
+        void radioButtonSwitch_CheckedChanged(object sender, EventArgs e) {
+            RadioButtonSwitch me = (RadioButtonSwitch) sender;
+            if (me.Checked) {
+                countBox.Value = nodes[RadioButtonSwitch.Active].Count;
+                nameBox.Text = nodes[RadioButtonSwitch.Active].Name;
+                typeBox.SelectedItem = nodes[RadioButtonSwitch.Active].Type;
+                activationBox.SelectedItem = nodes[RadioButtonSwitch.Active].Activation;
+            }
+        }
+
+        private void loadToolStripMenuItem_Click( object sender, EventArgs e ) {
+            nodes[0].Name = "test";
+            label1.Text = " " + RadioButtonSwitch.Active;
         }
     }
 
@@ -58,5 +73,6 @@ namespace P04_Map_Maker {
         public NodeType Type { get; set; }
         public int Activation { get; set; }
         public int Count { get; set; }
+
     }
 }
