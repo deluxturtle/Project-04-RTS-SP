@@ -10,15 +10,17 @@ using System.Windows.Forms;
 
 namespace P04_Map_Maker {
     public partial class Form1 : Form {
+        #region fields
+
+        Node[] nodes = new Node[19];
+
+        #endregion
+
         public Form1() {
             InitializeComponent();
         }
 
-        #region
-        
-        Node[] nodes = new Node[19];
-
-        #endregion
+        #region menu strip
 
         void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
             //create about window
@@ -26,21 +28,15 @@ namespace P04_Map_Maker {
             about.Show();
         }
 
-        private void typeBox_SelectedIndexChanged( object sender, EventArgs e ) {
+        #endregion
 
-        }
+        void typeBox_SelectedIndexChanged(object sender, EventArgs e) {}
 
-        private void activationBox_SelectedIndexChanged( object sender, EventArgs e ) {
+        void activationBox_SelectedIndexChanged(object sender, EventArgs e) {}
 
-        }
+        void countBox_ValueChanged(object sender, EventArgs e) {}
 
-        private void countBox_ValueChanged( object sender, EventArgs e ) {
-
-        }
-
-        private void nameBox_TextChanged( object sender, EventArgs e ) {
-
-        }
+        void nameBox_TextChanged(object sender, EventArgs e) {}
     }
 
     public enum NodeType {
