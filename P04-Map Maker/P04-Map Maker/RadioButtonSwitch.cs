@@ -29,7 +29,7 @@ class RadioButtonSwitch : RadioButton {
     protected override void OnCheckedChanged(EventArgs e) {
         base.OnCheckedChanged(e);
 
-        Console.WriteLine("Rawr");
+        //Console.WriteLine("Rawr");
         
     }
 
