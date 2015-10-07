@@ -30,23 +30,7 @@ namespace P04_Map_Maker {
             ChangeFields(0);
 
             nameBox.Text = worldName;
-        }
-
-        void ExportNodes() {
-            using (StreamWriter sw = new StreamWriter($"{nameBox.Text}.txt")) {
-                string fullPath = ( (FileStream)( sw.BaseStream ) ).Name;
-                Console.WriteLine(fullPath);
-
-                sw.WriteLine(worldName);
-                foreach (Node node in nodes) {
-                    sw.WriteLine(node.Type + " " + node.Activation + " " + node.Count);
-                }
-            }
-        }
-
-        void ImportNodes() {
-            
-        }
+        }   
 
         #region menu strip
 
@@ -68,7 +52,9 @@ namespace P04_Map_Maker {
             ChangeFields( 0 );
         }
 
-        void openToolStripMenuItem_Click(object sender, EventArgs e) {}
+        void openToolStripMenuItem_Click(object sender, EventArgs e) {
+            //ImportNodes();
+        }
 
         void saveToolStripMenuItem_Click(object sender, EventArgs e) {
             ExportNodes();
@@ -133,6 +119,33 @@ namespace P04_Map_Maker {
         }
 
         #endregion
+
+        /// <summary>
+        /// Imports the nodes from a user selected file. not yet implemented
+        /// </summary>
+        void ImportNodes() {
+            OpenFileDialog pathDialog = new OpenFileDialog();
+            pathDialog.InitialDirectory = "";
+            pathDialog.ShowDialog();
+            using ( StreamReader sr = new StreamReader( pathDialog.FileName ) ) {
+
+            }
+        }
+
+        /// <summary>
+        /// Exports the nodes to a file next to the build named using the worldname
+        /// </summary>
+        void ExportNodes() {
+            using ( StreamWriter sw = new StreamWriter( $"{nameBox.Text}.txt" ) ) {
+                string fullPath = ( (FileStream)( sw.BaseStream ) ).Name;
+                Console.WriteLine( fullPath );
+
+                sw.WriteLine( worldName );
+                foreach ( Node node in nodes ) {
+                    sw.WriteLine( node.Type + " " + node.Activation + " " + node.Count );
+                }
+            }
+        }
 
     }
 
