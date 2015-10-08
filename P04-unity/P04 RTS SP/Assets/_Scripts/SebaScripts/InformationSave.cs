@@ -6,10 +6,6 @@ using System.IO;
 /// @Description: takes the player and level name and writes it to a file under
 /// Assets/save_data/"levelName"/gameinformation.txt
 /// 
-/// Data Structure
-/// --------------
-/// userName
-/// levelName
 /// </summary>
 public class InformationSave : MonoBehaviour {
 
@@ -88,9 +84,22 @@ public class InformationSave : MonoBehaviour {
 	}
 
 
+
+
+    /*SaveFile Looks like
+    UserName
+    LevelName
+    CurrentPhase
+    WoodAmount
+    WoolAmount
+    BrickAmount
+    GrainAmount
+    Buildings And roads arrays
+    
+    */
 	public void SaveGame()
 	{
-		PlayerData playerData = GameObject.Find("GameInformation").GetComponent<PlayerData>();
+		PlayerData playerData = GameObject.Find("SceneManager").GetComponent<PlayerData>();
 
 		StreamWriter writer = null;
 		using (writer = new StreamWriter(txtInfoLocation + outputFile))
